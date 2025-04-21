@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Diego Cortes</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -20,7 +21,7 @@
         <p>Profesor de Música e Ingeniero en formación</p>
     </header>
 
-    <section id="sobre-mi">
+    <section id="sobre-mi" data-aos="fade-up">
         <h2>Sobre mí</h2>
         <div class="sobre-mi-contenido">
             <img src="img/perfil.jpeg" alt="Foto de Diego Cortés">
@@ -34,11 +35,11 @@
         </div>
     </section>
 
-    <section id="proyectos">
+    <section id="proyectos" data-aos="zoom-in">
         <h2>Proyectos</h2>
-        <div class="contenedor-proyectos">
+        <div class="contenedor-proyectos" >
     
-            <div class="tarjeta-proyecto">
+            <div class="tarjeta-proyecto" >
                 <h3>Portafolio Web</h3>
                 <p>Sitio web personal desarrollado con HTML, CSS y JavaScript, publicado con GitHub Pages.</p>
                 <ul class="tecnologias">
@@ -65,7 +66,7 @@
         </div>
     </section>
 
-    <section id="contacto">
+    <section id="contacto" data-aos="fade-up">
         <h2>Contacto</h2>
         <form action="https://formspree.io/f/mnndaajn" method="POST">
             <label for="nombre">Nombre:</label>
@@ -85,21 +86,35 @@
         </p>    
     </section>
         
-
+    <section id="ejercicios" data-aos="fade-up">
+        <h2>Ejercicios de Desarrollo Web</h2>
+        <div class="contenedor-ejercicios">
+    
+            <div class="tarjeta-ejercicio">
+                <h3>Ejercicio 1: Saludo personalizado</h3>
+                <p>Ingresa tu nombre y recibirás un saludo dinámico.</p>
+                <input type="text" id="nombreUsuario" placeholder="Tu nombre">
+                <button onclick="mostrarSaludo()">Saludar</button>
+                <p id="resultadoSaludo"></p>
+            </div>
+    
+        </div>
+    </section>
+    
 
 
     <main>
-        <section id="proyectos">
-            <h2>Proyectos</h2>
-            <p>Aquí podrás ver todos los proyectos en los que he trabajado.</p>
-            <a href="#contacto">Contáctame</a>
-        </section>
+    
     </main>
 
     <footer>
-        <p>&copy; 2023 Diego Cortés. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Diego Cortés. Todos los derechos reservados.</p>
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
