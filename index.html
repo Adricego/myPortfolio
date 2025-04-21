@@ -97,12 +97,29 @@
                 <button onclick="mostrarSaludo()">Saludar</button>
                 <p id="resultadoSaludo"></p>
             </div>
+
+            <div class="tarjeta-ejercicio">
+                <h3>Ejercicio 2: Clima actual</h3>
+                <p>Ingresa tu ciudad y obtendrás la información del clima actual.</p>
+                <input type="text" id="ciudadInput" placeholder="Ej: Santiago">
+                <button onclick="obtenerClima()">Consultar</button>
+                <p id="resultadoClima"></p>
+            </div>
+
+            <div class="tarjeta-ejercicio">
+                <h3>Ejercicio 3: Gato aleatorio</h3>
+                <p>Haz clic para ver una imagen de gato aleatorio</p>
+                <button onclick="mostrarGato()">Ver Gato</button>
+                <div id="contenedorGato" style="margin-top: 1rem;">
+                    <img id="imagenGato" src="" alt="Imagen de gato aleatorio" style="display: none;">
+                    <br>
+                    <button id="cerrarGato" onclick="cerrarImagenGato()" style="display: none; margin-top: 0.5rem;">Cerrar imagen</button>
+                </div>       
+            </div>
     
         </div>
     </section>
     
-
-
     <main>
     
     </main>
